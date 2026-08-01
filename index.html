@@ -5,41 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mais Engenharia</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #004080; color: white; padding: 20px; text-align: center; }
-    nav { background: #f0f0f0; padding: 10px; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: #004080; font-weight: bold; }
-    section { padding: 20px; }
-    footer { background: #004080; color: white; text-align: center; padding: 10px; }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; }
+    header { background:#004080; color:white; text-align:center; padding:20px; }
+    header img { height:80px; }
+    nav { display:flex; flex-wrap:wrap; justify-content:center; background:#f0f0f0; padding:10px; }
+    nav a { margin:5px; padding:8px 12px; background:#004080; color:white; border-radius:4px; text-decoration:none; }
+    h2 { color:#f2a900; margin-top:20px; }
+    section { padding:20px; }
+    .cards { display:flex; flex-wrap:wrap; justify-content:center; }
+    .card { flex:1 1 300px; margin:10px; padding:15px; background:white; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    img { max-width:100%; height:auto; border-radius:6px; }
+    footer { background:#004080; color:white; text-align:center; padding:10px; margin-top:20px; }
   </style>
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Mais Engenharia">
     <h1>Mais Engenharia</h1>
     <p>Excelência em soluções de engenharia</p>
   </header>
+
   <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#valores">Valores</a>
+    <a href="#atuacao">Áreas de Atuação</a>
+    <a href="#numeros">Nossos Números</a>
+    <a href="#projetos">Projetos</a>
     <a href="#contato">Contato</a>
   </nav>
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>A Mais Engenharia é especializada em projetos inovadores e sustentáveis.</p>
+
+  <section id="quem-somos">
+    <h2>Quem Somos</h2>
+    <p>A Mais Engenharia é especializada em soluções técnicas em engenharia civil, elétrica e infraestrutura.</p>
+    <p>Com atuação nacional em projetos, obras, revitalizações e manutenção, nossa equipe multidisciplinar garante segurança, qualidade e resultados.</p>
   </section>
-  <section id="servicos">
-    <h2>Serviços</h2>
+
+  <section id="valores">
+    <h2>Nossos Valores</h2>
     <ul>
-      <li>Consultoria em engenharia</li>
-      <li>Projetos estruturais</li>
-      <li>Gestão de obras</li>
+      <li><strong>Missão:</strong> Entregar soluções seguras, eficientes e viáveis.</li>
+      <li><strong>Visão:</strong> Ser referência nacional e internacional em engenharia civil aplicada à infraestrutura.</li>
+      <li><strong>Valores:</strong> Segurança • Qualidade • Prazo • Ética • Inovação</li>
     </ul>
   </section>
+
+  <section id="atuacao">
+    <h2>Áreas de Atuação</h2>
+    <div class="cards">
+      <div class="card"><h3>Engenharia Civil e Estrutural</h3><p>Obras civis, industriais e de infraestrutura com foco em qualidade e segurança.</p></div>
+      <div class="card"><h3>Engenharia Elétrica e Sistemas de Energia</h3><p>Infraestrutura elétrica, subestações, linhas de transmissão e usinas.</p></div>
+      <div class="card"><h3>Manutenção e Soluções Industriais</h3><p>Serviços de manutenção, montagem eletromecânica e revitalização industrial.</p></div>
+      <div class="card"><h3>Consultoria e Gestão Técnica</h3><p>Planejamento, projetos e gerenciamento técnico com excelência e inovação.</p></div>
+    </div>
+  </section>
+
+  <section id="numeros">
+    <h2>Nossos Números</h2>
+    <ul>
+      <li>1.035 obras executadas</li>
+      <li>115 clientes atendidos</li>
+      <li>117 colaboradores qualificados</li>
+      <li>9 anos de experiência</li>
+      <li>52 contratos industriais</li>
+      <li>10 subestações revitalizadas</li>
+      <li>115 mil m² construídos</li>
+    </ul>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos Executados</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="img/subestacao.jpg" alt="Subestação">
+        <p>Recuperação estrutural de paredes corta-fogo em subestação.</p>
+      </div>
+      <div class="card">
+        <img src="img/via.jpg" alt="Via em subestação">
+        <p>Recuperação e readequação de via em subestação.</p>
+      </div>
+      <div class="card">
+        <img src="img/predial.jpg" alt="Revitalização Predial">
+        <p>Manutenção e revitalização predial.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="contato">
     <h2>Contato</h2>
-    <p>Email: contato@maisengenharia.com</p>
-    <p>Telefone: (91) 99999-9999</p>
+    <p>Email: maisengenhariaconstrutora.pa@hotmail.com</p>
+    <p>Telefone: (91) 9 9991-7353 / (61) 99889-4044</p>
+    <p>CNPJ: 28.490.604/0001-82</p>
   </section>
+
   <footer>
     <p>&copy; 2026 Mais Engenharia</p>
   </footer>
